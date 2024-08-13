@@ -1,0 +1,503 @@
+Ticker,Company Name,Sector,X-Spot-Id,X-Post-Id,Conversation Id
+AAPL,Apple Inc,Information Technology,sp_Rba9aFpG,finmb$27444752,sp_Rba9aFpG_finmb$24937
+MSFT,Microsoft Corp,Information Technology,sp_Rba9aFpG,finmb$21835,sp_Rba9aFpG_finmb$21835
+AMZN,Amazon Com Inc,Consumer Discretionary,sp_Rba9aFpG,finmb$18749,sp_Rba9aFpG_finmb$18749
+NVDA,Nvidia Corp,Information Technology,sp_Rba9aFpG,finmb$32307,sp_Rba9aFpG_finmb$32307
+GOOGL,Alphabet Inc Class A,Communication,sp_Rba9aFpG,finmb$29096,sp_Rba9aFpG_finmb$29096
+GOOG,Alphabet Inc Class C,Communication,sp_Rba9aFpG,finmb$29096,sp_Rba9aFpG_finmb$29096
+META,Meta Platforms Inc Class A,Communication,sp_Rba9aFpG,finmb$20765463,sp_Rba9aFpG_finmb$20765463
+TSLA,Tesla Inc,Consumer Discretionary,sp_Rba9aFpG,finmb$27444752,sp_Rba9aFpG_finmb$27444752
+UNH,Unitedhealth Group Inc,Health Care,sp_Rba9aFpG,finmb$104673,sp_Rba9aFpG_finmb$104673
+LLY,Eli Lilly,Health Care,sp_Rba9aFpG,finmb$285467,sp_Rba9aFpG_finmb$285467
+JPM,JPMorgan Chase & Co,Financials,sp_Rba9aFpG,finmb$658776,sp_Rba9aFpG_finmb$658776
+XOM,Exxon Mobil Corp,Energy,sp_Rba9aFpG,finmb$406338,sp_Rba9aFpG_finmb$406338
+JNJ,Johnson & Johnson,Health Care,sp_Rba9aFpG,finmb$139677,sp_Rba9aFpG_finmb$139677
+V,Visa Inc Class A,Financials,sp_Rba9aFpG,finmb$38043467,sp_Rba9aFpG_finmb$38043467
+PG,Procter & Gamble,Consumer Staples,sp_Rba9aFpG,finmb$33328,sp_Rba9aFpG_finmb$33328
+AVGO,Broadcom Inc,Information Technology,sp_Rba9aFpG,finmb$25016048,sp_Rba9aFpG_finmb$25016048
+MA,Mastercard Inc Class A,Financials,sp_Rba9aFpG,finmb$6477196,sp_Rba9aFpG_finmb$6477196
+HD,Home Depot Inc,Consumer Discretionary,sp_Rba9aFpG,finmb$278679,sp_Rba9aFpG_finmb$278679
+CVX,Chevron Corp,Energy,sp_Rba9aFpG,finmb$98506,sp_Rba9aFpG_finmb$98506
+MRK,Merck & Co Inc,Health Care,sp_Rba9aFpG,finmb$288502,sp_Rba9aFpG_finmb$288502
+ABBV,Abbvie Inc,Health Care,sp_Rba9aFpG,finmb$141885706,sp_Rba9aFpG_finmb$141885706
+PEP,Pepsico Inc,Consumer Staples,sp_Rba9aFpG,finmb$32854,sp_Rba9aFpG_finmb$32854
+COST,Costco Wholesale Corp,Consumer Staples,sp_Rba9aFpG,finmb$92817,sp_Rba9aFpG_finmb$92817
+ADBE,Adobe Inc,Information Technology,sp_Rba9aFpG,finmb$24321,sp_Rba9aFpG_finmb$24321
+KO,Coca-Cola,Consumer Staples,sp_Rba9aFpG,finmb$26642,sp_Rba9aFpG_finmb$26642
+CSCO,Cisco Systems Inc,Information Technology,sp_Rba9aFpG,finmb$19691,sp_Rba9aFpG_finmb$19691
+WMT,Walmart Inc,Consumer Staples,sp_Rba9aFpG,finmb$313055,sp_Rba9aFpG_finmb$313055
+TMO,Thermo Fisher Scientific Inc,Health Care,sp_Rba9aFpG,finmb$97023,sp_Rba9aFpG_finmb$97023
+MCD,Mcdonalds Corp,Consumer Discretionary,sp_Rba9aFpG,finmb$139488,sp_Rba9aFpG_finmb$139488
+PFE,Pfizer Inc,Health Care,sp_Rba9aFpG,finmb$162270,sp_Rba9aFpG_finmb$162270
+CRM,Salesforce Inc,Information Technology,sp_Rba9aFpG,finmb$122917,sp_Rba9aFpG_finmb$122917
+BAC,Bank Of America Corp,Financials,sp_Rba9aFpG,finmb$19049,sp_Rba9aFpG_finmb$19049
+ACN,Accenture Plc Class A,Information Technology,sp_Rba9aFpG,finmb$972190,sp_Rba9aFpG_finmb$972190
+CMCSA,Comcast Corp Class A,Communication,sp_Rba9aFpG,finmb$173341,sp_Rba9aFpG_finmb$173341
+LIN,Linde Plc,Materials,sp_Rba9aFpG,finmb$318049,sp_Rba9aFpG_finmb$318049
+NFLX,Netflix Inc,Communication,sp_Rba9aFpG,finmb$32012,sp_Rba9aFpG_finmb$32012
+ABT,Abbott Laboratories,Health Care,sp_Rba9aFpG,finmb$247483,sp_Rba9aFpG_finmb$247483
+ORCL,Oracle Corp,Information Technology,sp_Rba9aFpG,finmb$22247,sp_Rba9aFpG_finmb$22247
+DHR,Danaher Corp,Health Care,sp_Rba9aFpG,finmb$265621,sp_Rba9aFpG_finmb$265621
+AMD,Advanced Micro Devices Inc,Information Technology,sp_Rba9aFpG,finmb$168864,sp_Rba9aFpG_finmb$168864
+WFC,Wells Fargo,Financials,sp_Rba9aFpG,finmb$292891,sp_Rba9aFpG_finmb$292891
+DIS,Walt Disney,Communication,sp_Rba9aFpG,finmb$191564,sp_Rba9aFpG_finmb$191564
+TXN,Texas Instrument Inc,Information Technology,sp_Rba9aFpG,finmb$140283,sp_Rba9aFpG_finmb$140283
+PM,Philip Morris International Inc,Consumer Staples,sp_Rba9aFpG,finmb$6569181,sp_Rba9aFpG_finmb$6569181
+VZ,Verizon Communications Inc,Communication,sp_Rba9aFpG,finmb$415798,sp_Rba9aFpG_finmb$415798
+INTU,Intuit Inc,Information Technology,sp_Rba9aFpG,finmb$21171,sp_Rba9aFpG_finmb$21171
+COP,Conocophillips,Energy,sp_Rba9aFpG,finmb$296527,sp_Rba9aFpG_finmb$296527
+CAT,Caterpillar Inc,Industrials,sp_Rba9aFpG,finmb$259378,sp_Rba9aFpG_finmb$259378
+AMGN,Amgen Inc,Health Care,sp_Rba9aFpG,finmb$24445,sp_Rba9aFpG_finmb$24445
+NEE,Nextera Energy Inc,Utilities,sp_Rba9aFpG,finmb$270586,sp_Rba9aFpG_finmb$270586
+INTC,Intel Corporation Corp,Information Technology,sp_Rba9aFpG,finmb$21127,sp_Rba9aFpG_finmb$21127
+UNP,Union Pacific Corp,Industrials,sp_Rba9aFpG,finmb$310078,sp_Rba9aFpG_finmb$310078
+LOW,Lowes Companies Inc,Consumer Discretionary,sp_Rba9aFpG,finmb$180871,sp_Rba9aFpG_finmb$180871
+IBM,International Business Machines Co,Information Technology,sp_Rba9aFpG,finmb$112350,sp_Rba9aFpG_finmb$112350
+BMY,Bristol Myers Squibb,Health Care,sp_Rba9aFpG,finmb$25798,sp_Rba9aFpG_finmb$25798
+SPGI,S&P Global Inc,Financials,sp_Rba9aFpG,finmb$21719,sp_Rba9aFpG_finmb$21719
+RTX,Rtx Corp,Industrials,sp_Rba9aFpG,finmb$159230,sp_Rba9aFpG_finmb$159230
+HON,Honeywell International Inc,Industrials,sp_Rba9aFpG,finmb$1340740,sp_Rba9aFpG_finmb$1340740
+BA,Boeing,Industrials,sp_Rba9aFpG,finmb$370857,sp_Rba9aFpG_finmb$370857
+UPS,United Parcel Service Inc Class B,Industrials,sp_Rba9aFpG,finmb$238570,sp_Rba9aFpG_finmb$238570
+GE,General Electric,Industrials,sp_Rba9aFpG,finmb$177031,sp_Rba9aFpG_finmb$177031
+QCOM,Qualcomm Inc,Information Technology,sp_Rba9aFpG,finmb$33493,sp_Rba9aFpG_finmb$33493
+AMAT,Applied Material Inc,Information Technology,sp_Rba9aFpG,finmb$251230,sp_Rba9aFpG_finmb$251230
+NKE,Nike Inc Class B,Consumer Discretionary,sp_Rba9aFpG,finmb$291981,sp_Rba9aFpG_finmb$291981
+PLD,Prologis Reit Inc,Real Estate,sp_Rba9aFpG,finmb$330123,sp_Rba9aFpG_finmb$330123
+NOW,Servicenow Inc,Information Technology,sp_Rba9aFpG,finmb$22967487,sp_Rba9aFpG_finmb$22967487
+BKNG,Booking Holdings Inc,Consumer Discretionary,sp_Rba9aFpG,finmb$33254,sp_Rba9aFpG_finmb$33254
+SBUX,Starbucks Corp,Consumer Discretionary,sp_Rba9aFpG,finmb$34745,sp_Rba9aFpG_finmb$34745
+MS,Morgan Stanley,Financials,sp_Rba9aFpG,finmb$472898,sp_Rba9aFpG_finmb$472898
+ELV,Elevance Health Inc,Health Care,sp_Rba9aFpG,finmb$160077,sp_Rba9aFpG_finmb$160077
+MDT,Medtronic Plc,Health Care,sp_Rba9aFpG,finmb$31348,sp_Rba9aFpG_finmb$31348
+GS,Goldman Sachs Group Inc,Financials,sp_Rba9aFpG,finmb$398625,sp_Rba9aFpG_finmb$398625
+DE,Deere,Industrials,sp_Rba9aFpG,finmb$266112,sp_Rba9aFpG_finmb$266112
+ADP,Automatic Data Processing Inc,Industrials,sp_Rba9aFpG,finmb$126269,sp_Rba9aFpG_finmb$126269
+LMT,Lockheed Martin Corp,Industrials,sp_Rba9aFpG,finmb$285827,sp_Rba9aFpG_finmb$285827
+TJX,Tjx Inc,Consumer Discretionary,sp_Rba9aFpG,finmb$306688,sp_Rba9aFpG_finmb$306688
+T,At&T Inc,Communication,sp_Rba9aFpG,finmb$100231,sp_Rba9aFpG_finmb$100231
+BLK,Blackrock Inc,Financials,sp_Rba9aFpG,finmb$403413,sp_Rba9aFpG_finmb$403413
+ISRG,Intuitive Surgical Inc,Health Care,sp_Rba9aFpG,finmb$30239,sp_Rba9aFpG_finmb$30239
+MDLZ,Mondelez International Inc Class A,Consumer Staples,sp_Rba9aFpG,finmb$739693,sp_Rba9aFpG_finmb$739693
+GILD,Gilead Sciences Inc,Health Care,sp_Rba9aFpG,finmb$29002,sp_Rba9aFpG_finmb$29002
+MMC,Marsh & Mclennan Inc,Financials,sp_Rba9aFpG,finmb$473342,sp_Rba9aFpG_finmb$473342
+AXP,American Express,Financials,sp_Rba9aFpG,finmb$92001,sp_Rba9aFpG_finmb$92001
+SYK,Stryker Corp,Health Care,sp_Rba9aFpG,finmb$94614,sp_Rba9aFpG_finmb$94614
+REGN,Regeneron Pharmaceuticals Inc,Health Care,sp_Rba9aFpG,finmb$33715,sp_Rba9aFpG_finmb$33715
+VRTX,Vertex Pharmaceuticals Inc,Health Care,sp_Rba9aFpG,finmb$36235,sp_Rba9aFpG_finmb$36235
+ETN,Eaton Plc,Industrials,sp_Rba9aFpG,finmb$175265,sp_Rba9aFpG_finmb$175265
+LRCX,Lam Research Corp,Information Technology,sp_Rba9aFpG,finmb$30655,sp_Rba9aFpG_finmb$30655
+ADI,Analog Devices Inc,Information Technology,sp_Rba9aFpG,finmb$251411,sp_Rba9aFpG_finmb$251411
+SCHW,Charles Schwab Corp,Financials,sp_Rba9aFpG,finmb$34093,sp_Rba9aFpG_finmb$34093
+CVS,Cvs Health Corp,Health Care,sp_Rba9aFpG,finmb$93625,sp_Rba9aFpG_finmb$93625
+ZTS,Zoetis Inc Class A,Health Care,sp_Rba9aFpG,finmb$215548781,sp_Rba9aFpG_finmb$215548781
+CI,Cigna,Health Care,sp_Rba9aFpG,finmb$172899,sp_Rba9aFpG_finmb$172899
+CB,Chubb Ltd,Financials,sp_Rba9aFpG,finmb$203028,sp_Rba9aFpG_finmb$203028
+AMT,American Tower Reit Corp,Real Estate,sp_Rba9aFpG,finmb$24766,sp_Rba9aFpG_finmb$24766
+SLB,Schlumberger Nv,Energy,sp_Rba9aFpG,finmb$301966,sp_Rba9aFpG_finmb$301966
+C,Citigroup Inc,Financials,sp_Rba9aFpG,finmb$391687,sp_Rba9aFpG_finmb$391687
+BDX,Becton Dickinson,Health Care,sp_Rba9aFpG,finmb$103678,sp_Rba9aFpG_finmb$103678
+MO,Altria Group Inc,Consumer Staples,sp_Rba9aFpG,finmb$53839346,sp_Rba9aFpG_finmb$53839346
+PGR,Progressive Corp,Financials,sp_Rba9aFpG,finmb$33352,sp_Rba9aFpG_finmb$33352
+TMUS,T Mobile Us Inc,Communication,sp_Rba9aFpG,finmb$93339,sp_Rba9aFpG_finmb$93339
+FI,Fiserv Inc,Financials,sp_Rba9aFpG,finmb$128209,sp_Rba9aFpG_finmb$128209
+SO,Southern,Utilities,sp_Rba9aFpG,finmb$120623,sp_Rba9aFpG_finmb$120623
+EOG,Eog Resources Inc,Energy,sp_Rba9aFpG,finmb$269660,sp_Rba9aFpG_finmb$269660
+BSX,Boston Scientific Corp,Health Care,sp_Rba9aFpG,finmb$317627,sp_Rba9aFpG_finmb$317627
+CME,Cme Group Inc Class A,Financials,sp_Rba9aFpG,finmb$2004577,sp_Rba9aFpG_finmb$2004577
+EQIX,Equinix Reit Inc,Real Estate,sp_Rba9aFpG,finmb$28202,sp_Rba9aFpG_finmb$28202
+MU,Micron Technology Inc,Information Technology,sp_Rba9aFpG,finmb$289030,sp_Rba9aFpG_finmb$289030
+DUK,Duke Energy Corp,Utilities,sp_Rba9aFpG,finmb$267850,sp_Rba9aFpG_finmb$267850
+PANW,Palo Alto Networks Inc,Information Technology,sp_Rba9aFpG,finmb$25460099,sp_Rba9aFpG_finmb$25460099
+PYPL,Paypal Holdings Inc,Financials,sp_Rba9aFpG,finmb$112732,sp_Rba9aFpG_finmb$112732
+AON,Aon Plc Class A,Financials,sp_Rba9aFpG,finmb$119853,sp_Rba9aFpG_finmb$119853
+SNPS,Synopsys Inc,Information Technology,sp_Rba9aFpG,finmb$35028,sp_Rba9aFpG_finmb$35028
+ITW,Illinois Tool Inc,Industrials,sp_Rba9aFpG,finmb$280561,sp_Rba9aFpG_finmb$280561
+KLAC,Kla Corp,Information Technology,sp_Rba9aFpG,finmb$282225,sp_Rba9aFpG_finmb$282225
+HUBB,Hubbell Incorporated,Industrials,sp_Rba9aFpG,finmb$279750,sp_Rba9aFpG_finmb$279750
+ICE,Intercontinental Exchange Inc,Financials,sp_Rba9aFpG,finmb$1081952,sp_Rba9aFpG_finmb$1081952
+APD,Air Products And Chemicals Inc,Materials,sp_Rba9aFpG,finmb$248356,sp_Rba9aFpG_finmb$248356
+SHW,Sherwin Williams,Materials,sp_Rba9aFpG,finmb$303104,sp_Rba9aFpG_finmb$303104
+CDNS,Cadence Design Systems Inc,Information Technology,sp_Rba9aFpG,finmb$25941,sp_Rba9aFpG_finmb$25941
+CSX,CSX Corp,Industrials,sp_Rba9aFpG,finmb$257948,sp_Rba9aFpG_finmb$257948
+NOC,Northrop Grumman Corp,Industrials,sp_Rba9aFpG,finmb$97199,sp_Rba9aFpG_finmb$97199
+CL,Colgate-Palmolive,Consumer Staples,sp_Rba9aFpG,finmb$53837907,sp_Rba9aFpG_finmb$53837907
+MPC,Marathon Petroleum Corp,Energy,sp_Rba9aFpG,finmb$118315802,sp_Rba9aFpG_finmb$118315802
+HUM,Humana Inc,Health Care,sp_Rba9aFpG,finmb$29618,sp_Rba9aFpG_finmb$29618
+FDX,Fedex Corp,Industrials,sp_Rba9aFpG,finmb$124423,sp_Rba9aFpG_finmb$124423
+WM,Waste Management Inc,Industrials,sp_Rba9aFpG,finmb$190694,sp_Rba9aFpG_finmb$190694
+MCK,Mckesson Corp,Health Care,sp_Rba9aFpG,finmb$288195,sp_Rba9aFpG_finmb$288195
+TGT,Target Corp,Consumer Staples,sp_Rba9aFpG,finmb$174438,sp_Rba9aFpG_finmb$174438
+ORLY,Oreilly Automotive Inc,Consumer Discretionary,,,
+HCA,Hca Healthcare Inc,Health Care,,,
+FCX,Freeport Mcmoran Inc,Materials,,,
+EMR,Emerson Electric,Industrials,,,
+PXD,Pioneer Natural Resource,Energy,,,
+MMM,3M,Industrials,,,
+MCO,Moodys Corp,Financials,,,
+ROP,Roper Technologies Inc,Information Technology,,,
+CMG,Chipotle Mexican Grill Inc,Consumer Discretionary,,,
+PSX,Phillips,Energy,,,
+MAR,Marriott International Inc Class A,Consumer Discretionary,,,
+PH,Parker-Hannifin Corp,Industrials,,,
+APH,Amphenol Corp Class A,Information Technology,,,
+GD,General Dynamics Corp,Industrials,,,
+USB,Us Bancorp,Financials,,,
+NXPI,Nxp Semiconductors Nv,Information Technology,,,
+AJG,Arthur J Gallagher,Financials,,,
+NSC,Norfolk Southern Corp,Industrials,,,
+PNC,Pnc Financial Services Group Inc,Financials,,,
+VLO,Valero Energy Corp,Energy,,,
+F,Ford Motor Co,Consumer Discretionary,,,
+MSI,Motorola Solutions Inc,Information Technology,,,
+GM,General Motors,Consumer Discretionary,,,
+TT,Trane Technologies Plc,Industrials,,,
+EW,Edwards Lifesciences Corp,Health Care,,,
+CARR,Carrier Global Corp,Industrials,,,
+AZO,Autozone Inc,Consumer Discretionary,,,
+ADSK,Autodesk Inc,Information Technology,,,
+TDG,Transdigm Group Inc,Industrials,,,
+ANET,Arista Networks Inc,Information Technology,,,
+SRE,Sempra,Utilities,,,
+ECL,Ecolab Inc,Materials,,,
+OXY,Occidental Petroleum Corp,Energy,,,
+PCAR,Paccar Inc,Industrials,,,
+ADM,Archer Daniels Midland,Consumer Staples,,,
+MNST,Monster Beverage Corp,Consumer Staples,,,
+KMB,Kimberly Clark Corp,Consumer Staples,,,
+PSA,Public Storage Reit,Real Estate,,,
+CCI,Crown Castle Inc,Real Estate,,,
+CHTR,Charter Communications Inc Class A,Communication,,,
+MCHP,Microchip Technology Inc,Information Technology,,,
+MSCI,Msci Inc,Financials,,,
+CTAS,Cintas Corp,Industrials,,,
+WMB,Williams Inc,Energy,,,
+AIG,American International Group Inc,Financials,,,
+STZ,Constellation Brands Inc Class A,Consumer Staples,,,
+HES,Hess Corp,Energy,,,
+NUE,Nucor Corp,Materials,,,
+ROST,Ross Stores Inc,Consumer Discretionary,,,
+AFL,Aflac Inc,Financials,,,
+KVUE,Kenvue Inc,Consumer Staples,,,
+AEP,American Electric Power Inc,Utilities,,,
+IDXX,Idexx Laboratories Inc,Health Care,,,
+D,Dominion Energy Inc,Utilities,,,
+TEL,Te Connectivity Ltd,Information Technology,,,
+JCI,Johnson Controls International Plc,Industrials,,,
+MET,Metlife Inc,Financials,,,
+GIS,General Mills Inc,Consumer Staples,,,
+IQV,Iqvia Holdings Inc,Health Care,,,
+EXC,Exelon Corp,Utilities,,,
+WELL,Welltower Inc,Real Estate,,,
+DXCM,Dexcom Inc,Health Care,,,
+HLT,Hilton Worldwide Holdings Inc,Consumer Discretionary,,,
+ON,On Semiconductor Corp,Information Technology,,,
+COF,Capital One Financial Corp,Financials,,,
+PAYX,Paychex Inc,Industrials,,,
+TFC,Truist Financial Corp,Financials,,,
+BIIB,Biogen Inc,Health Care,,,
+O,Realty Income Reit Corp,Real Estate,,,
+FTNT,Fortinet Inc,Information Technology,,,
+DOW,Dow Inc,Materials,,,
+TRV,Travelers Companies Inc,Financials,,,
+DLR,Digital Realty Trust Reit Inc,Real Estate,,,
+MRNA,Moderna Inc,Health Care,,,
+CPRT,Copart Inc,Industrials,,,
+ODFL,Old Dominion Freight Line Inc,Industrials,,,
+DHI,D R Horton Inc,Consumer Discretionary,,,
+YUM,Yum Brands Inc,Consumer Discretionary,,,
+SPG,Simon Property Group Reit Inc,Real Estate,,,
+CTSH,Cognizant Technology Solutions Cor,Information Technology,,,
+AME,Ametek Inc,Industrials,,,
+BKR,Baker Hughes Class A,Energy,,,
+SYY,Sysco Corp,Consumer Staples,,,
+A,Agilent Technologies Inc,Health Care,,,
+CTVA,Corteva Inc,Materials,,,
+CNC,Centene Corp,Health Care,,,
+EL,Estee Lauder Inc Class A,Consumer Staples,,,
+AMP,Ameriprise Finance Inc,Financials,,,
+CEG,Constellation Energy Corp,Utilities,,,
+HAL,Halliburton,Energy,,,
+OTIS,Otis Worldwide Corp,Industrials,,,
+ROK,Rockwell Automation Inc,Industrials,,,
+PRU,Prudential Financial Inc,Financials,,,
+DD,Dupont De Nemours Inc,Materials,,,
+KMI,Kinder Morgan Inc,Energy,,,
+VRSK,Verisk Analytics Inc,Industrials,,,
+LHX,L3Harris Technologies Inc,Industrials,,,
+DG,Dollar General Corp,Consumer Staples,,,
+FIS,Fidelity National Information Serv,Financials,,,
+CMI,Cummins Inc,Industrials,,,
+CSGP,Costar Group Inc,Real Estate,,,
+FAST,Fastenal,Industrials,,,
+PPG,Ppg Industries Inc,Materials,,,
+GPN,Global Payments Inc,Financials,,,
+GWW,Ww Grainger Inc,Industrials,,,
+HSY,Hershey Foods,Consumer Staples,,,
+BK,Bank Of New York Mellon Corp,Financials,,,
+XEL,Xcel Energy Inc,Utilities,,,
+DVN,Devon Energy Corp,Energy,,,
+EA,Electronic Arts Inc,Communication,,,
+NEM,Newmont,Materials,,,
+ED,Consolidated Edison Inc,Utilities,,,
+URI,United Rentals Inc,Industrials,,,
+VICI,Vici Pptys Inc,Real Estate,,,
+PEG,Public Service Enterprise Group In,Utilities,,,
+KR,Kroger,Consumer Staples,,,
+RSG,Republic Services Inc,Industrials,,,
+LEN,Lennar A Corp,Consumer Discretionary,,,
+PWR,Quanta Services Inc,Industrials,,,
+WST,West Pharmaceutical Services Inc,Health Care,,,
+COR,Cencora Inc,Health Care,,,
+OKE,Oneok Inc,Energy,,,
+VMC,Vulcan Materials,Materials,,,
+KDP,Keurig Dr Pepper Inc,Consumer Staples,,,
+WBD,Warner Bros. Discovery Inc Series,Communication,,,
+ACGL,Arch Capital Group Ltd,Financials,,,
+ALL,Allstate Corp,Financials,,,
+IR,Ingersoll Rand Inc,Industrials,,,
+CDW,Cdw Corp,Information Technology,,,
+FANG,Diamondback Energy Inc,Energy,,,
+MLM,Martin Marietta Materials Inc,Materials,,,
+PCG,Pg&E Corp,Utilities,,,
+DAL,Delta Air Lines Inc,Industrials,,,
+EXR,Extra Space Storage Reit Inc,Real Estate,,,
+FTV,Fortive Corp,Industrials,,,
+AWK,American Water Works Inc,Utilities,,,
+IT,Gartner Inc,Information Technology,,,
+KHC,Kraft Heinz,Consumer Staples,,,
+GEHC,Ge Healthcare Technologies Inc,Health Care,,,
+WEC,Wec Energy Group Inc,Utilities,,,
+HPQ,Hp Inc,Information Technology,,,
+EIX,Edison International,Utilities,,,
+CBRE,Cbre Group Inc Class A,Real Estate,,,
+APTV,Aptiv Plc,Consumer Discretionary,,,
+ANSS,Ansys Inc,Information Technology,,,
+MTD,Mettler Toledo Inc,Health Care,,,
+DLTR,Dollar Tree Inc,Consumer Staples,,,
+AVB,Avalonbay Communities Reit Inc,Real Estate,,,
+ILMN,Illumina Inc,Health Care,,,
+ALGN,Align Technology Inc,Health Care,,,
+LYB,Lyondellbasell Industries Nv Class,Materials,,,
+TROW,T Rowe Price Group Inc,Financials,,,
+GLW,Corning Inc,Information Technology,,,
+EFX,Equifax Inc,Industrials,,,
+WY,Weyerhaeuser Reit,Real Estate,,,
+ZBH,Zimmer Biomet Holdings Inc,Health Care,,,
+XYL,Xylem Inc,Industrials,,,
+SBAC,Sba Communications Reit Corp Class,Real Estate,,,
+RMD,Resmed Inc,Health Care,,,
+TSCO,Tractor Supply,Consumer Discretionary,,,
+EBAY,Ebay Inc,Consumer Discretionary,,,
+KEYS,Keysight Technologies Inc,Information Technology,,,
+CHD,Church And Dwight Inc,Consumer Staples,,,
+STT,State Street Corp,Financials,,,
+DFS,Discover Financial Services,Financials,,,
+HIG,Hartford Financial Services Group,Financials,,,
+ALB,Albemarle Corp,Materials,,,
+STE,Steris,Health Care,,,
+ES,Eversource Energy,Utilities,,,
+TTWO,Take Two Interactive Software Inc,Communication,,,
+MPWR,Monolithic Power Systems Inc,Information Technology,,,
+CAH,Cardinal Health Inc,Health Care,,,
+EQR,Equity Residential Reit,Real Estate,,,
+RCL,Royal Caribbean Group Ltd,Consumer Discretionary,,,
+WTW,Willis Towers Watson Plc,Financials,,,
+HPE,Hewlett Packard Enterprise,Information Technology,,,
+DTE,Dte Energy,Utilities,,,
+GPC,Genuine Parts,Consumer Discretionary,,,
+BR,Broadridge Financial Solutions Inc,Industrials,,,
+ULTA,Ulta Beauty Inc,Consumer Discretionary,,,
+FICO,Fair Isaac Corp,Information Technology,,,
+CTRA,Coterra Energy Inc,Energy,,,
+BAX,Baxter International Inc,Health Care,,,
+AEE,Ameren Corp,Utilities,,,
+MTB,M&T Bank Corp,Financials,,,
+MKC,Mccormick & Co Non-Voting Inc,Consumer Staples,,,
+ETR,Entergy Corp,Utilities,,,
+WAB,Westinghouse Air Brake Technologie,Industrials,,,
+DOV,Dover Corp,Industrials,,,
+FE,Firstenergy Corp,Utilities,,,
+RJF,Raymond James Inc,Financials,,,
+INVH,Invitation Homes Inc,Real Estate,,,
+FLT,Fleetcor Technologies Inc,Financials,,,
+CLX,Clorox,Consumer Staples,,,
+TDY,Teledyne Technologies Inc,Information Technology,,,
+TRGP,Targa Resources Corp,Energy,,,
+DRI,Darden Restaurants Inc,Consumer Discretionary,,,
+LH,Laboratory Corporation Of America,Health Care,,,
+HOLX,Hologic Inc,Health Care,,,
+VRSN,Verisign Inc,Information Technology,,,
+MOH,Molina Healthcare Inc,Health Care,,,
+LUV,Southwest Airlines,Industrials,,,
+PPL,Ppl Corp,Utilities,,,
+ARE,Alexandria Real Estate Equities Re,Real Estate,,,
+NVR,Nvr Inc,Consumer Discretionary,,,
+COO,Cooper Inc,Health Care,,,
+WBA,Walgreen Boots Alliance Inc,Consumer Staples,,,
+PHM,Pultegroup Inc,Consumer Discretionary,,,
+NDAQ,Nasdaq Inc,Financials,,,
+HWM,Howmet Aerospace Inc,Industrials,,,
+RF,Regions Financial Corp,Financials,,,
+CNP,Centerpoint Energy Inc,Utilities,,,
+IRM,Iron Mountain Inc,Real Estate,,,
+LVS,Las Vegas Sands Corp,Consumer Discretionary,,,
+FITB,Fifth Third Bancorp,Financials,,,
+EXPD,Expeditors International Of Washin,Industrials,,,
+VTR,Ventas Reit Inc,Real Estate,,,
+FSLR,First Solar Inc,Information Technology,,,
+PFG,Principal Financial Group Inc,Financials,,,
+BRO,Brown & Brown Inc,Financials,,,
+J,Jacobs Solutions Inc,Industrials,,,
+IEX,Idex Corp,Industrials,,,
+BG,Bunge Ltd,Consumer Staples,,,
+ATO,Atmos Energy Corp,Utilities,,,
+FDS,Factset Research Systems Inc,Financials,,,
+ENPH,Enphase Energy Inc,Information Technology,,,
+MAA,Mid America Apartment Communities,Real Estate,,,
+CMS,Cms Energy Corp,Utilities,,,
+IFF,International Flavors & Fragrances,Materials,,,
+BALL,Ball Corp,Materials,,,
+SWKS,Skyworks Solutions Inc,Information Technology,,,
+CINF,Cincinnati Financial Corp,Financials,,,
+NTAP,Netapp Inc,Information Technology,,,
+STLD,Steel Dynamics Inc,Materials,,,
+UAL,United Airlines Holdings Inc,Industrials,,,
+WAT,Waters Corp,Health Care,,,
+OMC,Omnicom Group Inc,Communication,,,
+TER,Teradyne Inc,Information Technology,,,
+CCL,Carnival Corp,Consumer Discretionary,,,
+JBHT,Jb Hunt Transport Services Inc,Industrials,,,
+MRO,Marathon Oil Corp,Energy,,,
+TYL,Tyler Technologies Inc,Information Technology,,,
+HBAN,Huntington Bancshares Inc,Financials,,,
+K,Kellogg,Consumer Staples,,,
+GRMN,Garmin Ltd,Consumer Discretionary,,,
+CBOE,Cboe Global Markets Inc,Financials,,,
+NTRS,Northern Trust Corp,Financials,,,
+TSN,Tyson Foods Inc Class A,Consumer Staples,,,
+AKAM,Akamai Technologies Inc,Information Technology,,,
+EG,Everest Group Ltd,Financials,,,
+ESS,Essex Property Trust Reit Inc,Real Estate,,,
+EQT,Eqt Corp,Energy,,,
+TXT,Textron Inc,Industrials,,,
+EXPE,Expedia Group Inc,Consumer Discretionary,,,
+SJM,Jm Smucker,Consumer Staples,,,
+PTC,Ptc Inc,Information Technology,,,
+DGX,Quest Diagnostics Inc,Health Care,,,
+AVY,Avery Dennison Corp,Materials,,,
+RVTY,Revvity Inc,Health Care,,,
+BBY,Best Buy Co Inc,Consumer Discretionary,,,
+CF,Cf Industries Holdings Inc,Materials,,,
+CAG,Conagra Brands Inc,Consumer Staples,,,
+EPAM,Epam Systems Inc,Information Technology,,,
+AMCR,Amcor Plc,Materials,,,
+LW,Lamb Weston Holdings Inc,Consumer Staples,,,
+PAYC,Paycom Software Inc,Industrials,,,
+SNA,Snap On Inc,Industrials,,,
+AXON,Axon Enterprise Inc,Industrials,,,
+POOL,Pool Corp,Consumer Discretionary,,,
+SYF,Synchrony Financial,Financials,,,
+SWK,Stanley Black & Decker Inc,Industrials,,,
+ZBRA,Zebra Technologies Corp Class A,Information Technology,,,
+DPZ,Dominos Pizza Inc,Consumer Discretionary,,,
+PKG,Packaging Corp Of America,Materials,,,
+CFG,Citizens Financial Group Inc,Financials,,,
+LDOS,Leidos Holdings Inc,Industrials,,,
+VTRS,Viatris Inc,Health Care,,,
+PODD,Insulet Corp,Health Care,,,
+LKQ,Lkq Corp,Consumer Discretionary,,,
+MOS,Mosaic,Materials,,,
+APA,Apa Corp,Energy,,,
+EVRG,Evergy Inc,Utilities,,,
+TRMB,Trimble Inc,Information Technology,,,
+MGM,Mgm Resorts International,Consumer Discretionary,,,
+NDSN,Nordson Corp,Industrials,,,
+WDC,Western Digital Corp,Information Technology,,,
+MAS,Masco Corp,Industrials,,,
+LNT,Alliant Energy Corp,Utilities,,,
+IPG,Interpublic Group Of Companies Inc,Communication,,,
+MTCH,Match Group Inc,Communication,,,
+STX,Seagate Technology Holdings Plc,Information Technology,,,
+KMX,Carmax Inc,Consumer Discretionary,,,
+TECH,Bio Techne Corp,Health Care,,,
+WRB,Wr Berkley Corp,Financials,,,
+BFB,Brown Forman Corp Class B,Consumer Staples,,,
+LYV,Live Nation Entertainment Inc,Communication,,,
+IP,International Paper,Materials,,,
+UDR,Udr Reit Inc,Real Estate,,,
+AES,Aes Corp,Utilities,,,
+CE,Celanese Corp,Materials,,,
+INCY,Incyte Corp,Health Care,,,
+L,Loews Corp,Financials,,,
+TAP,Molson Coors Brewing Class B,Consumer Staples,,,
+GEN,Gen Digital Inc,Information Technology,,,
+CPT,Camden Property Trust Reit,Real Estate,,,
+KIM,Kimco Realty Reit Corp,Real Estate,,,
+JKHY,Jack Henry And Associates Inc,Financials,,,
+HRL,Hormel Foods Corp,Consumer Staples,,,
+HST,Host Hotels & Resorts Reit Inc,Real Estate,,,
+FMC,Fmc Corp,Materials,,,
+CZR,Caesars Entertainment Inc,Consumer Discretionary,,,
+PEAK,Healthpeak Properties Inc,Real Estate,,,
+CDAY,Ceridian Hcm Holding Inc,Industrials,,,
+PNR,Pentair,Industrials,,,
+NI,Nisource Inc,Utilities,,,
+CHRW,Ch Robinson Worldwide Inc,Industrials,,,
+HSIC,Henry Schein Inc,Health Care,,,
+CRL,Charles River Laboratories Interna,Health Care,,,
+REG,Regency Centers Reit Corp,Real Estate,,,
+QRVO,Qorvo Inc,Information Technology,,,
+TFX,Teleflex Inc,Health Care,,,
+KEY,Keycorp,Financials,,,
+GL,Globe Life Inc,Financials,,,
+EMN,Eastman Chemical,Materials,,,
+WYNN,Wynn Resorts Ltd,Consumer Discretionary,,,
+ALLE,Allegion Plc,Industrials,,,
+AAL,American Airlines Group Inc,Industrials,,,
+FFIV,F5 Inc,Information Technology,,,
+BWA,Borgwarner Inc,Consumer Discretionary,,,
+BXP,Boston Properties Reit Inc,Real Estate,,,
+MKTX,Marketaxess Holdings Inc,Financials,,,
+ROL,Rollins Inc,Industrials,,,
+JNPR,Juniper Networks Inc,Information Technology,,,
+PNW,Pinnacle West Corp,Utilities,,,
+ETSY,Etsy Inc,Consumer Discretionary,,,
+BLDR,Builders FirstSource Inc,Building materials Manufacturing,,,
+FOXA,Fox Corp Class A,Communication,,,
+AOS,A O Smith Corp,Industrials,,,
+HAS,Hasbro Inc,Consumer Discretionary,,,
+HII,Huntington Ingalls Industries Inc,Industrials,,,
+NRG,Nrg Energy Inc,Utilities,,,
+CPB,Campbell Soup,Consumer Staples,,,
+UHS,Universal Health Services Inc Clas,Health Care,,,
+BIO,Bio Rad Laboratories Inc Class A,Health Care,,,
+WRK,Westrock,Materials,,,
+RHI,Robert Half,Industrials,,,
+CTLT,Catalent Inc,Health Care,,,
+GEV,GE Vernova Inc,Energy,,,
+BBWI,Bath And Body Works Inc,Consumer Discretionary,,,
+NWSA,News Corp Class A,Communication,,,
+TPR,Tapestry Inc,Consumer Discretionary,,,
+PARA,Paramount Global Class B,Communication,,,
+SMCI,Super Micro Computer Inc,Information Technology,,,
+BEN,Franklin Resources Inc,Financials,,,
+AIZ,Assurant Inc,Financials,,,
+NCLH,Norwegian Cruise Line Holdings Ltd,Consumer Discretionary,,,
+GNRC,Generac Holdings Inc,Industrials,,,
+FRT,Federal Realty Investment Trust Re,Real Estate,,,
+IVZ,Invesco Ltd,Financials,,,
+SOLV,Solventum Corp,Health Care,,,
+CMA,Comerica Inc,Financials,,,
+DVA,Davita Inc,Health Care,,,
+JBL,Jabil Inc,Electronics Manufacturing,,,
+LULU,Lululemon Athletica Inc,Consumer Discretionary,,,
+DECK,Deckers Outdoor Corp,Consumer Discretionary,,,
+UBER,Uber Technologies Inc,Mobile Transportation,,,
+MHK,Mohawk Industries Inc,Consumer Discretionary,,,
+RL,Ralph Lauren Corp Class A,Consumer Discretionary,,,
+VLTO,Veralto,Industrials,,,
+FOX,Fox Corp Class B,Communication,,,
+BX,Blackstone Inc,Financials,,,
+ABNB,Airbnb Inc,Consumer Discretionary,,,
+NWS,News Corp Class B,Communication,,,
