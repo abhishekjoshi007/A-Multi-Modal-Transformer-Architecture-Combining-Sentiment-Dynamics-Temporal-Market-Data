@@ -89,5 +89,5 @@ for epoch in range(num_epochs):
     print(f"Epoch {epoch+1}, Loss: {total_loss/len(dataloader)}")
 
 # Save the model
-torch.save(model.state_dict(), 'stock_price_lstm.pth')
+torch.save(model.state_dict(), 'Integrated _features_stock_price_lstm.pth')
 print("Model training completed and saved.")
