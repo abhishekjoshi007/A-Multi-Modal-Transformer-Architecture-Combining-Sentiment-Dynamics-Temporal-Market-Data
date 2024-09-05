@@ -171,7 +171,7 @@ lr_scheduler = ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=3, ver
 final_model.fit(train_gen, epochs=50, validation_data=val_gen, callbacks=[early_stopping, lr_scheduler], verbose=2)
 
 # Evaluate the model on the test set
-test_accuracy = final_model.evaluate(test_gen)[1]
+test_loss, test_accuracy = final_model.evaluate(test_gen)
 print(f"Test Accuracy: {test_accuracy * 100:.2f}%")
 
 # Evaluate the model on additional metrics
