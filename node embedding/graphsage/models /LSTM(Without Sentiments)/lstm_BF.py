@@ -6,6 +6,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
 import pandas as pd
 from tqdm import tqdm
+from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score
 
 # Define the paths
 baseline_features_dir = '/Users/abhishekjoshi/Documents/GitHub/personalized-portfolio-recommendation/Technology_data'
@@ -104,3 +105,30 @@ for epoch in range(num_epochs):
 # Save the baseline model
 torch.save(baseline_model.state_dict(), 'baseline_stock_price_lstm.pth')
 print("Baseline model training completed and saved.")
+
+# Evaluate the model
+baseline_model.eval()
+all_labels = []
+all_preds = []
+
+with torch.no_grad():
+    for features, label in baseline_dataloader:
+        output = baseline_model(features)
+        predicted = (output > 0.5).float()  # Convert probabilities to binary predictions
+        all_labels.extend(label.cpu().numpy())
+        all_preds.extend(predicted.cpu().numpy())
+
+# Convert predictions and labels to numpy arrays
+all_labels = np.array(all_labels)
+all_preds = np.array(all_preds)
+
+# Calculate metrics
+accuracy = accuracy_score(all_labels, all_preds)
+f1 = f1_score(all_labels, all_preds, average='macro')
+precision = precision_score(all_labels, all_preds, average='macro')
+recall = recall_score(all_labels, all_preds, average='macro')
+
+print(f"Accuracy: {accuracy:.4f}")
+print(f"F1 Score: {f1:.4f}")
+print(f"Precision: {precision:.4f}")
+print(f"Recall: {recall:.4f}")

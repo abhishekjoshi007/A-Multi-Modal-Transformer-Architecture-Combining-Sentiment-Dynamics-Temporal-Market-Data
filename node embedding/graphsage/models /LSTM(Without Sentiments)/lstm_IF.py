@@ -5,6 +5,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 from tqdm import tqdm
 
 # Define the paths
@@ -113,3 +114,26 @@ for epoch in range(num_epochs):
 # Load the best model if early stopping was triggered
 model.load_state_dict(torch.load('best_stock_price_lstm.pth'))
 print("Model training completed and saved.")
+
+# Evaluation on the test set
+model.eval()
+all_preds = []
+all_labels = []
+
+with torch.no_grad():
+    for features, label in dataloader:
+        output = model(features.unsqueeze(1))
+        preds = (output > 0.5).float()  # Binarize the output
+        all_preds.extend(preds.cpu().numpy())
+        all_labels.extend(label.cpu().numpy())
+
+# Calculate accuracy, F1 score, precision, and recall
+accuracy = accuracy_score(all_labels, all_preds)
+f1 = f1_score(all_labels, all_preds, average='binary')
+precision = precision_score(all_labels, all_preds, average='binary')
+recall = recall_score(all_labels, all_preds, average='binary')
+
+print(f"Accuracy: {accuracy * 100:.2f}%")
+print(f"F1 Score: {f1:.4f}")
+print(f"Precision: {precision:.4f}")
+print(f"Recall: {recall:.4f}")
