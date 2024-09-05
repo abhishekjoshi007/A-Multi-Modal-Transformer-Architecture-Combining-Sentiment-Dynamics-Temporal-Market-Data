@@ -6,6 +6,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
 import torch.nn.functional as F
+from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 
 # Define the paths
 features_dir = '/Users/abhishekjoshi/Documents/GitHub/personalized-portfolio-recommendation/node embedding/node2vec_embeddings/integrated_features'
@@ -89,5 +90,27 @@ for epoch in range(num_epochs):
     print(f"Epoch {epoch+1}, Loss: {total_loss/len(dataloader)}")
 
 # Save the model
-torch.save(model.state_dict(), 'Integrated _features_stock_price_lstm.pth')
+torch.save(model.state_dict(), 'Integrated_features_stock_price_lstm.pth')
 print("Model training completed and saved.")
+
+# Evaluate the model
+model.eval()
+y_true = []
+y_pred = []
+
+with torch.no_grad():
+    for features, label in dataloader:
+        output = model(features.unsqueeze(1))
+        y_true.extend(label.numpy())
+        y_pred.extend((output.squeeze().numpy() > 0.5).astype(int))  # Convert probabilities to binary predictions
+
+# Calculate metrics
+accuracy = accuracy_score(y_true, y_pred)
+f1 = f1_score(y_true, y_pred, average='macro')
+precision = precision_score(y_true, y_pred, average='macro')
+recall = recall_score(y_true, y_pred, average='macro')
+
+print(f"Accuracy: {accuracy * 100:.2f}%")
+print(f"F1 Score: {f1:.4f}")
+print(f"Precision: {precision:.4f}")
+print(f"Recall: {recall:.4f}")

@@ -3,9 +3,10 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.utils.data import DataLoader, Dataset
+from torch.utils.data import DataLoader, Dataset, random_split
 import pandas as pd
 from tqdm import tqdm
+from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score
 
 # Define the paths
 baseline_features_dir = '/Users/abhishekjoshi/Documents/GitHub/personalized-portfolio-recommendation/Technology_data'  # Update with the correct path
@@ -46,9 +47,16 @@ class BaselineStockDataset(Dataset):
         
         return torch.tensor(features, dtype=torch.float32), torch.tensor(label, dtype=torch.float32)
 
-# Initialize the dataset and dataloader for baseline features
+# Initialize the dataset
 baseline_dataset = BaselineStockDataset(baseline_features_dir, labels)
-baseline_dataloader = DataLoader(baseline_dataset, batch_size=32, shuffle=True)
+
+# Split the dataset into training and testing sets
+train_size = int(0.8 * len(baseline_dataset))
+test_size = len(baseline_dataset) - train_size
+train_dataset, test_dataset = random_split(baseline_dataset, [train_size, test_size])
+
+train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
+test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False)
 
 # Define the LSTM model
 class StockPriceLSTM(nn.Module):
@@ -84,15 +92,41 @@ optimizer = optim.Adam(baseline_model.parameters(), lr=learning_rate)
 baseline_model.train()
 for epoch in range(num_epochs):
     total_loss = 0
-    for features, label in tqdm(baseline_dataloader, desc=f"Epoch {epoch+1}/{num_epochs}"):
+    for features, label in tqdm(train_loader, desc=f"Epoch {epoch+1}/{num_epochs}"):
         optimizer.zero_grad()
         output = baseline_model(features)  # No need to unsqueeze, features is already 3D
         loss = criterion(output, label.unsqueeze(1))
         loss.backward()
         optimizer.step()
         total_loss += loss.item()
-    print(f"Epoch {epoch+1}, Loss: {total_loss/len(baseline_dataloader)}")
+    print(f"Epoch {epoch+1}, Loss: {total_loss/len(train_loader)}")
 
 # Save the baseline model
 torch.save(baseline_model.state_dict(), 'baseline_stock_price_lstm.pth')
 print("Baseline model training completed and saved.")
+
+# Evaluation function to compute accuracy, F1 score, precision, and recall
+def evaluate_model(model, dataloader):
+    model.eval()
+    all_preds = []
+    all_labels = []
+
+    with torch.no_grad():
+        for features, labels in dataloader:
+            outputs = model(features)
+            preds = outputs.round()  # Thresholding at 0.5
+            all_preds.extend(preds.cpu().numpy())
+            all_labels.extend(labels.cpu().numpy())
+
+    accuracy = accuracy_score(all_labels, all_preds)
+    f1 = f1_score(all_labels, all_preds, average='macro')
+    precision = precision_score(all_labels, all_preds, average='macro')
+    recall = recall_score(all_labels, all_preds, average='macro')
+
+    print(f"Accuracy: {accuracy:.4f}")
+    print(f"F1 Score: {f1:.4f}")
+    print(f"Precision: {precision:.4f}")
+    print(f"Recall: {recall:.4f}")
+
+# Evaluate the model
+evaluate_model(baseline_model, test_loader)
