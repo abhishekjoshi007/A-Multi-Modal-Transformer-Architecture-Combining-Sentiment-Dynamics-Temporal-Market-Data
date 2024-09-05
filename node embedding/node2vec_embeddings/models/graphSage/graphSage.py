@@ -100,16 +100,19 @@ def train_graphsage_supervised(train_data, val_data, model, optimizer, scheduler
     
     def evaluate(data, model):
         model.eval()
-        correct = 0
         y_pred = []
         y_true = []
-        for data in val_data:
-            out = model(data.x, data.edge_index)
-            pred = out.argmax(dim=1)
-            y_pred.extend(pred.cpu().numpy())
-            y_true.extend(data.y.cpu().numpy())
+        with torch.no_grad():
+            for data in data:
+                out = model(data.x, data.edge_index)
+                pred = out.argmax(dim=1)
+                y_pred.extend(pred.cpu().numpy())
+                y_true.extend(data.y.cpu().numpy())
         accuracy = accuracy_score(y_true, y_pred)
-        return accuracy
+        precision = precision_score(y_true, y_pred, average='macro')
+        recall = recall_score(y_true, y_pred, average='macro')
+        f1 = f1_score(y_true, y_pred, average='macro')
+        return accuracy, precision, recall, f1
 
     epochs = 200
     patience = 30
@@ -127,8 +130,8 @@ def train_graphsage_supervised(train_data, val_data, model, optimizer, scheduler
 
         avg_loss = total_loss / len(train_data)
         if epoch % 10 == 0:
-            accuracy = evaluate(val_data, model)
-            print(f'Epoch {epoch}, Loss: {avg_loss:.4f}, Accuracy: {accuracy:.4f}')
+            accuracy, precision, recall, f1 = evaluate(val_data, model)
+            print(f'Epoch {epoch}, Loss: {avg_loss:.4f}, Accuracy: {accuracy:.4f}, Precision: {precision:.4f}, Recall: {recall:.4f}, F1 Score: {f1:.4f}')
 
         if avg_loss < best_loss:
             best_loss = avg_loss
@@ -184,8 +187,7 @@ print("Model saved as graphsage_best_model.pth")
 # test_labels = load_labels(test_labels_file)
 # test_data = prepare_data(test_embeddings_dict, test_features_dict, test_labels)
 
-# Evaluate the Model on Test Data
-def evaluate_model(data, model):
+def evaluate(data, model):
     model.eval()
     y_pred = []
     y_true = []
@@ -196,12 +198,7 @@ def evaluate_model(data, model):
             y_pred.extend(pred.cpu().numpy())
             y_true.extend(data.y.cpu().numpy())
     accuracy = accuracy_score(y_true, y_pred)
-    precision = precision_score(y_true, y_pred)
-    recall = recall_score(y_true, y_pred)
-    f1 = f1_score(y_true, y_pred)
-    roc_auc = roc_auc_score(y_true, y_pred)
-    print(f'Test Accuracy: {accuracy:.4f}')
-    print(f'Precision: {precision:.4f}, Recall: {recall:.4f}, F1 Score: {f1:.4f}, ROC AUC: {roc_auc:.4f}')
-
-# Uncomment to evaluate
-# evaluate_model(test_data, model)
+    precision = precision_score(y_true, y_pred, average='macro', zero_division=1)
+    recall = recall_score(y_true, y_pred, average='macro', zero_division=1)
+    f1 = f1_score(y_true, y_pred, average='macro', zero_division=1)
+    return accuracy, precision, recall, f1
