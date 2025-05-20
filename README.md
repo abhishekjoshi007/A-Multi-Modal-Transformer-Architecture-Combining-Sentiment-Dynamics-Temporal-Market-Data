@@ -19,26 +19,6 @@ This project presents a novel multi-modal forecasting framework that integrates:
 
 We propose an adaptive Transformer-based architecture capable of robustly predicting **next-day stock returns** by dynamically learning from multimodal inputs. The system also integrates **Graph Neural Networks** to model inter-stock relationships and **LSTM & Random Forest** as comparative baselines.
 
-
-## 📁 Project Structure
-
-├── data/
-│   ├── historical/            # Daily OHLCV stock data
-│   ├── sentiment/             # Reddit/Yahoo discussions with FinBERT scores
-│   ├── macro/                 # Macroeconomic indicators (GDP, CPI, etc.)
-├── models/
-│   ├── transformer.py         # Core multi-modal transformer model
-│   ├── lstm\_baseline.py       # LSTM baseline model
-│   ├── rf\_baseline.py         # Random Forest baseline
-│   ├── gnn\_module.py          # Optional GAT/GCN integration
-├── utils/
-│   ├── preprocessing.py       # Data cleaning, VWSS computation
-│   ├── evaluation.py          # MAE, RMSE, Sharpe, Directional Accuracy
-├── train.py                   # Training script for all models
-├── config.yaml                # Hyperparameter and model config
-└── README.md                  # Project description
-
-
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
