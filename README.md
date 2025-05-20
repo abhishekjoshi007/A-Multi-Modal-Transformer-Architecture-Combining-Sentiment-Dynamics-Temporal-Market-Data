@@ -23,6 +23,7 @@ We propose an adaptive Transformer-based architecture capable of robustly predic
 
 ### 1. Clone the repository
 git clone [https://github.com/yourusername/multimodal-stock-prediction.git](https://github.com/abhishekjoshi007/A-Multi-Modal-Transformer-Architecture-Combining-Sentiment-Dynamics-Temporal-Market-Data)
+
 cd multimodal-stock-prediction
 
 
@@ -56,4 +57,4 @@ bibtex
 
 ## 📬 Contact
 
-For questions, collaborations, or feedback, feel free to connect on LinkedIn or open an issue in this repository.
+For questions, collaborations, or feedback, feel free to connect on LinkedIn- https://www.linkedin.com/in/abhishek-joshi-510b68151/ / Mail - abhishek.07joshi@gmail.com or open an issue in this repository.
