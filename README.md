@@ -22,7 +22,7 @@ We propose an adaptive Transformer-based architecture capable of robustly predic
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
-git clone https://github.com/yourusername/multimodal-stock-prediction.git
+git clone [https://github.com/yourusername/multimodal-stock-prediction.git](https://github.com/abhishekjoshi007/A-Multi-Modal-Transformer-Architecture-Combining-Sentiment-Dynamics-Temporal-Market-Data)
 cd multimodal-stock-prediction
 
 
