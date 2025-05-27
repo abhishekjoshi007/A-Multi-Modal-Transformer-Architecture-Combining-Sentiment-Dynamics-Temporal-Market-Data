@@ -141,6 +141,7 @@ If you use this work, please cite:
   doi={10.1109/BigData62323.2024.10825219}
 }
 ```
+![Video Presentation](https://www.youtube.com/watch?v=Hwx-vBymxOg)
 
 ## 📬 Contact
 
