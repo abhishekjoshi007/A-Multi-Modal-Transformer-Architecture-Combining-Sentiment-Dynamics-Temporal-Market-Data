@@ -77,7 +77,7 @@ We curated a 6-month dataset of 716 technology-sector stocks with:
 
 ## 🔍 Problem Statement
 
-(./utils/Model_Architecture.png)
+(./utils/model_architecture.png)
 
 
 ## 📈 Evaluation Metrics
