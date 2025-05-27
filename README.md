@@ -48,14 +48,19 @@ Our architecture uses **Graph Neural Networks** (GraphSAGE, Node2Vec), **tempora
 ## 📂 Project Structure
 
 A-Multi-Modal-Transformer-Architecture-Combining-Sentiment-Dynamics-Temporal-Market-Data/
-├── Base-Line Models/                 # Baseline models (RF, LR)
+├── Base-Line Models/                # Baseline models (RF, LR)
 ├── Data collection Scripts/         # Scripts to fetch, clean, and align data
 ├── Graph Creation/                  # Dynamic graph construction
-├── Main Models & Node Embedding/   # Transformer, LSTM, TGN, Node2Vec, GraphSAGE
-├── Recommendation Scripts/         # Ranking stocks by predicted return
+├── Main Models & Node Embedding/    # Transformer, LSTM, TGN, Node2Vec, GraphSAGE
+├── Recommendation Scripts/          # Ranking stocks by predicted return
 ├── csv/                             # Preprocessed datasets
-├── utils/                           # Fort Figures and Information
+├── utils/                           # Plots, figures, and support files
+│   ├── dataset.png
+│   ├── metrics_1.png
+│   ├── metrics_2.png
+│   └── Model_Architecture.png
 ├── LICENSE
+├── Presentation.pptx
 └── README.md
 
 
