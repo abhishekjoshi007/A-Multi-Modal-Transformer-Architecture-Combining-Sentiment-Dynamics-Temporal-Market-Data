@@ -1,70 +1,134 @@
-# A Multi-Modal Transformer Architecture Combining Sentiment Dynamics, Temporal Market Data, and Macroeconomic Indicators for Sturdy Stock Return Forecasting
+# 📈 Multi-Modal Stock Return Prediction using Transformers and Graph Neural Networks
 
-This repository contains the official implementation of our IEEE Big Data 2024 paper:
+This repository contains the official implementation of the paper:
 
-**"A Multi-Modal Transformer Architecture Combining Sentiment Dynamics, Temporal Market Data, and Macroeconomic Indicators for Sturdy Stock Return Forecasting"**  
-by **Abhishek Joshi**, **Jahnavi Krishna Koda**, and **Alihan Hadimlioglu**
+> **"A Multi-Modal Transformer Architecture Combining Sentiment Dynamics, Temporal Market Data, and Macroeconomic Indicators for Sturdy Stock Return Forecasting"**  
+> _Presented at IEEE International Conference on Big Data (BigData) 2024_
 
-📄 **[IEEE Paper Link](https://ieeexplore.ieee.org/document/10825219)**  
-🔗 **DOI:** [10.1109/BigData62323.2024.10825219](https://doi.org/10.1109/BigData62323.2024.10825219)
-
+Link- https://ieeexplore.ieee.org/document/10825219
 
 ## 🧠 Overview
 
-This project presents a novel multi-modal forecasting framework that integrates:
+This work proposes a robust, multi-modal forecasting framework that predicts short-term stock returns by integrating:
 
-- **Volume-weighted sentiment signals** from Reddit and Yahoo Finance discussions
-- **Temporal market indicators** like OHLCV and volatility
-- **Macroeconomic indicators** including inflation, GDP, and interest rates
+- 📊 Historical Market Data (OHLCV)
+- 📃 Stock Descriptions
+- 🧾 Shareholder Information
+- 💬 Sentiment Scores (from news + social media)
+- 🌐 Dynamic Inter-stock Relations via Graphs
 
-We propose an adaptive Transformer-based architecture capable of robustly predicting **next-day stock returns** by dynamically learning from multimodal inputs. The system also integrates **Graph Neural Networks** to model inter-stock relationships and **LSTM & Random Forest** as comparative baselines.
-
-
-## 📁 Project Structure
-
-├── data/
-│   ├── historical/            # Daily OHLCV stock data
-│   ├── sentiment/             # Reddit/Yahoo discussions with FinBERT scores
-│   ├── macro/                 # Macroeconomic indicators (GDP, CPI, etc.)
-├── models/
-│   ├── transformer.py         # Core multi-modal transformer model
-│   ├── lstm\_baseline.py       # LSTM baseline model
-│   ├── rf\_baseline.py         # Random Forest baseline
-│   ├── gnn\_module.py          # Optional GAT/GCN integration
-├── utils/
-│   ├── preprocessing.py       # Data cleaning, VWSS computation
-│   ├── evaluation.py          # MAE, RMSE, Sharpe, Directional Accuracy
-├── train.py                   # Training script for all models
-├── config.yaml                # Hyperparameter and model config
-└── README.md                  # Project description
+Our architecture uses **Graph Neural Networks** (GraphSAGE, Node2Vec), **temporal encoders** (LSTM, TGN), and a **multi-modal Transformer fusion mechanism** to deliver state-of-the-art return prediction accuracy and Sharpe ratio performance.
 
 
-## 🚀 Getting Started
 
-### 1. Clone the repository
-git clone https://github.com/yourusername/multimodal-stock-prediction.git
-cd multimodal-stock-prediction
+## 🏗️ Architecture Overview
+
+![Model Pipeline](./utils/Model_Architecture.pngutils/Model_Architecture.png)
+
+### Modules:
+- **Input Streams**:
+  - Historical Sequences
+  - Description Documents
+  - Shareholder Records
+  - Sentiment Time Series
+- **Feature Encoders**:
+  - Sequence Encoder for price data
+  - Text encoders for stock description
+  - Graph Construction for stock relations
+- **Graph Embedding**:
+  - Node2Vec / GraphSAGE
+- **Temporal Modeling**:
+  - LSTM / TGN / GAT
+- **Output**:
+  - Next-day return prediction
+  - Stock ranking based on expected returns
 
 
-### 2. Set up the environment
-conda create -n stockpred python=3.10
-conda activate stockpred
+
+## 📂 Project Structure
+
+A-Multi-Modal-Transformer-Architecture-Combining-Sentiment-Dynamics-Temporal-Market-Data/
+├── Base-Line Models/                 # Baseline models (RF, LR)
+├── Data collection Scripts/         # Scripts to fetch, clean, and align data
+├── Graph Creation/                  # Dynamic graph construction
+├── Main Models & Node Embedding/   # Transformer, LSTM, TGN, Node2Vec, GraphSAGE
+├── Recommendation Scripts/         # Ranking stocks by predicted return
+├── csv/                             # Preprocessed datasets
+├── utils/                           # Fort Figures and Information
+├── LICENSE
+└── README.md
+
+
+
+
+## 📊 Dataset
+
+We curated a 6-month dataset of 716 technology-sector stocks with:
+
+- Daily OHLCV values
+- Sector and industry descriptions
+- Top institutional holders
+- Sentiment from Twitter & financial news (BERT-based)
+- Generated dynamic inter-stock graphs based on industry & common holders
+
+(./utils/dataset.png)
+
+
+
+## 🔍 Problem Statement
+
+(./utils/Model_Architecture.png)
+
+
+## 📈 Evaluation Metrics
+
+| Metric                  | Description                                      |
+|-------------------------|--------------------------------------------------|
+| **Accuracy**            | Correct movement prediction                     |
+| **F1 Score**            | Balance of precision and recall                 |
+| **Information Coefficient (IC)** | Pearson correlation with real returns       |
+| **Rank IC**             | Spearman correlation on ranking of returns      |
+| **Sharpe Ratio**        | Risk-adjusted return                            |
+| **Long-Short Avg Return** | Return from top vs bottom stock strategy      |
+
+## 🧪 Results Snapshot
+
+(./utils/metrics_1.png)
+(./utils/metrics_2.png)
+
+## 🛠️ Setup & Run
+
+### 📦 Requirements
+
+- Python 3.8+
+- PyTorch, PyTorch Geometric
+- Transformers (HuggingFace)
+- scikit-learn, pandas, numpy
+
+### ⚙️ Installation
+
+```bash
+git clone https://github.com/abhishekjoshi007/A-Multi-Modal-Transformer-Architecture-Combining-Sentiment-Dynamics-Temporal-Market-Data
+cd A-Multi-Modal-Transformer-Architecture-Combining-Sentiment-Dynamics-Temporal-Market-Data
 pip install -r requirements.txt
+````
 
-### 3. Prepare the data
-* Place historical stock data (Yahoo Finance)
-* Run `python utils/preprocessing.py` to process sentiment and macro data
+### 🚀 Training
 
-### 4. Train the model
-python train.py --model transformer --config config.yaml
+```bash
+python train.py --model tgn --graph graphsage --epochs 100
+```
 
+Arguments:
+
+* `--model`: `lstm`, `gat`, `tgn`, `d-gcn`
+* `--graph`: `node2vec`, `graphsage`
 
 ## 📌 Citation
 
-If you use this code or reference this work, please cite:
+If you use this work, please cite:
 
-bibtex
-
+```bibtex
 @INPROCEEDINGS{10825219,
   author={Joshi, Abhishek and Koda, Jahnavi Krishna and Hadimlioglu, Alihan},
   booktitle={2024 IEEE International Conference on Big Data (BigData)}, 
@@ -73,7 +137,20 @@ bibtex
   pages={4896-4902},
   doi={10.1109/BigData62323.2024.10825219}
 }
+```
 
 ## 📬 Contact
 
-For questions, collaborations, or feedback, feel free to connect on LinkedIn or open an issue in this repository.
+For questions, collaborations, or feedback:
+
+* 💼 [LinkedIn – Abhishek Joshi](https://www.linkedin.com/in/abhishek-joshi-510b68151/)
+* 📧 Email: [abhishek.07joshi@gmail.com](mailto:abhishek.07joshi@gmail.com)
+
+## 🙏 Acknowledgments
+
+Special thanks to:
+
+* Texas A\&M University–Corpus Christi
+* IEEE Big Data 2024 Committee
+* Open-source contributors to PyTorch Geometric and HuggingFace
+
