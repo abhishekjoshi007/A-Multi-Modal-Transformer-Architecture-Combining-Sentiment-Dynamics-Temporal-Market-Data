@@ -23,7 +23,7 @@ Our architecture uses **Graph Neural Networks** (GraphSAGE, Node2Vec), **tempora
 
 ## 🏗️ Architecture Overview
 
-![Model Pipeline](./utils/Model_Architecture.pngutils/Model_Architecture.png)
+![Model Pipeline](./utils/Model_Architecture.png)
 
 ### Modules:
 - **Input Streams**:
@@ -71,13 +71,13 @@ We curated a 6-month dataset of 716 technology-sector stocks with:
 - Sentiment from Twitter & financial news (BERT-based)
 - Generated dynamic inter-stock graphs based on industry & common holders
 
-(./utils/dataset.png)
+![Datset](./utils/dataset.png)
 
 
 
 ## 🔍 Problem Statement
 
-(./utils/model_architecture.png)
+![Problem Formulation](./utils/pf.png)
 
 
 ## 📈 Evaluation Metrics
@@ -93,8 +93,7 @@ We curated a 6-month dataset of 716 technology-sector stocks with:
 
 ## 🧪 Results Snapshot
 
-(./utils/metrics_1.png)
-(./utils/metrics_2.png)
+![Evaluation](./utils/metrics.png)
 
 ## 🛠️ Setup & Run
 
