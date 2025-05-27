@@ -43,10 +43,6 @@ Our architecture uses **Graph Neural Networks** (GraphSAGE, Node2Vec), **tempora
   - Next-day return prediction
   - Stock ranking based on expected returns
 
-
-
-## 📂 Project Structure
-
 ## 📂 Project Structure
 
 ```bash
