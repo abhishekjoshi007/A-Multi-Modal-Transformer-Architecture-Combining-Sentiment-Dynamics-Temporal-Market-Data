@@ -47,21 +47,7 @@ Our architecture uses **Graph Neural Networks** (GraphSAGE, Node2Vec), **tempora
 
 ## 📂 Project Structure
 
-A-Multi-Modal-Transformer-Architecture-Combining-Sentiment-Dynamics-Temporal-Market-Data/
-├── Base-Line Models/                # Baseline models (RF, LR)
-├── Data collection Scripts/         # Scripts to fetch, clean, and align data
-├── Graph Creation/                  # Dynamic graph construction
-├── Main Models & Node Embedding/    # Transformer, LSTM, TGN, Node2Vec, GraphSAGE
-├── Recommendation Scripts/          # Ranking stocks by predicted return
-├── csv/                             # Preprocessed datasets
-├── utils/                           # Plots, figures, and support files
-│   ├── dataset.png
-│   ├── metrics_1.png
-│   ├── metrics_2.png
-│   └── Model_Architecture.png
-├── LICENSE
-├── Presentation.pptx
-└── README.md
+<pre> <code>## 📂 Project Structure <details> <summary>Click to expand</summary> ```bash A-Multi-Modal-Transformer-Architecture-Combining-Sentiment-Dynamics-Temporal-Market-Data/ ├── Base-Line Models/ # Baseline models (Random Forest, Linear Regression) ├── Data collection Scripts/ # Scripts to fetch, clean, and align data ├── Graph Creation/ # Dynamic graph construction ├── Main Models & Node Embedding/ # Transformer, LSTM, TGN, Node2Vec, GraphSAGE ├── Recommendation Scripts/ # Stock ranking logic ├── csv/ # Preprocessed CSV datasets ├── utils/ # Figures, visuals, supporting artifacts │ ├── dataset.png │ ├── metrics_1.png │ ├── metrics_2.png │ └── Model_Architecture.png ├── LICENSE ├── Presentation.pptx └── README.md ``` </details> </code> </pre>
 
 
 
