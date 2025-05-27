@@ -65,7 +65,7 @@ A-Multi-Modal-Transformer-Architecture-Combining-Sentiment-Dynamics-Temporal-Mar
 ├── LICENSE
 ├── Presentation.pptx
 └── README.md
-</details> ```
+```
 
 
 
